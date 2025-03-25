@@ -8,3 +8,10 @@ def calculate_discount(price, discount_percent):
         return final_price
     else:
         return price
+
+#Using the calculate_discount function, prompt the user to enter the original price of an item and the discount percentage. Print the final price after applying the discount, or if no discount was applied, print the original price.
+
+original_price = float(input("Enter the original price of the item: "))
+discount_percent = float(input("Enter the discount percentage (20% or higher): "))
+
+final_price = calculate_discount(original_price, discount_percent)
